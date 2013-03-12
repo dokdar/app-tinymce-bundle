@@ -23,8 +23,8 @@ class DefaultController extends Controller
      */
     public function showMenuAction($slug)
     {
-        $em = $this->getDoctrine()->getEntityManager();
-        $opcja = $em->getRepository('MyFrontendBundle:Menu')->findOneBySlug($slug);
+        $em = $this->getDoctrine()->getManager();
+        $opcja = $em->getRepository('GajdawSimpleMenuBundle:Menu')->findOneBySlug($slug);
         if (!$opcja) {
             $this->createNotFoundException('aaa...');
         }

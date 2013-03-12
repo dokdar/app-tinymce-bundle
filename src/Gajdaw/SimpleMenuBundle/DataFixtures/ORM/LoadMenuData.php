@@ -20,7 +20,9 @@ class LoadUserData implements FixtureInterface
             $r = new Menu();
             $r->setTitle($e['title']);
             $r->setContents($e['contents']);
-            $r->setSlug($e['slug']);
+            if (isset($e['slug'])) {
+                $r->setSlug($e['slug']);
+            }
 
             $manager->persist($r);
             $manager->flush();

@@ -1,19 +1,17 @@
 op1:
     title:    O firmie
     contents: Lorem ipsum...
-    slug:     ofirmie
 
 op2:
     title:    Kontakt
     contents: Dolor sit...
-    slug:     kontakt
+    slug:     ala-ma-kota
 
 op3:
     title:    Portfolio
     contents: Amet...
-    slug:     portfolio
 
 op4:
     title:    Oferta
     contents: Ble ble ble...
-    slug:     oferta
+
