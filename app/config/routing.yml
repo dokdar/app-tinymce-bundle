@@ -1,0 +1,5 @@
+gajdaw_simple_menu:
+    resource: "@GajdawSimpleMenuBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

@@ -22,6 +22,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Gajdaw\SimpleMenuBundle\GajdawSimpleMenuBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
