@@ -16,4 +16,19 @@ class DefaultController extends Controller
     {
         return array('name' => $name);
     }
+
+    /**
+     * @Route("/{slug}.html", name="_menu_show")
+     * @Template()
+     */
+    public function showMenuAction($slug)
+    {
+        $em = $this->getDoctrine()->getEntityManager();
+        $opcja = $em->getRepository('MyFrontendBundle:Menu')->findOneBySlug($slug);
+        if (!$opcja) {
+            $this->createNotFoundException('aaa...');
+        }
+        return array('opcja' => $opcja);
+    }
+
 }
