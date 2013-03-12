@@ -17,7 +17,7 @@ class MenuType extends AbstractType
                 'class' => 'tinymce',
                 'data-theme' => 'advanced'
             )))
-            ->add('slug')
+            //->add('slug')
         ;
     }
 
