@@ -5,6 +5,12 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+        <style>
+            .current {
+                border: 2px solid red;
+            }
+
+        </style>
     </head>
     <body>
         {{ knp_menu_render('GajdawSimpleMenuBundle:Builder:mainMenu') }}
